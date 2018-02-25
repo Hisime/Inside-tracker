@@ -1,0 +1,18 @@
+.container () {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: @padding-width;
+  padding-right: @padding-width;
+
+  @media (min-width: @screen-xl) {
+    width: @container-xl;
+  }
+}
+
+.list-reset() {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
