@@ -1,0 +1,38 @@
+.main-title {
+  margin-bottom: 0;
+  font-family: @font-family2;
+  font-size: 82px;
+  text-transform: uppercase;
+  color: @white;
+  line-height: 1;
+
+  &--dark {
+    color: @dark-grey;
+
+    .main-title__index {
+      color: @blue;
+    }
+  }
+
+
+  @media (min-width: @screen-xl) {
+    font-size: 52px;
+  }
+
+  &__index {
+    display: block;
+    color: @green;
+    @media (min-width: @screen-xl) {
+      display: inline-block;
+    }
+  }
+
+  &--big {
+    @media (min-width: @screen-xl) {
+      font-size: 82px;
+      .main-title__index {
+        display: block;
+      }
+    }
+  }
+}
