@@ -12,4 +12,21 @@ $(document).ready(function() {
     nav: false
   });
 
+  $('.members__items').owlCarousel({
+    items:1,
+    smartSpeed: 500,
+    nav: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        960:{
+            items:3
+        }
+    }
+  });
+
 });
